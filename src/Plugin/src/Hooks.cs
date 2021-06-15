@@ -1,15 +1,15 @@
 namespace H3VRMod
 {
-    public class Hooks
-    {
-        public void Hook()
-        {
-            
-        }
+	public class Hooks
+	{
+		public void Hook()
+		{
 
-        public void Unhook()
-        {
-            
-        }
-    }
+		}
+
+		public void Unhook()
+		{
+
+		}
+	}
 }

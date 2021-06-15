@@ -1,5 +1,4 @@
-﻿using System;
-using BepInEx;
+﻿using BepInEx;
 
 namespace H3VRMod
 {
@@ -7,27 +6,27 @@ namespace H3VRMod
 	[BepInProcess("h3vr.exe")]
 	public class Plugin : BaseUnityPlugin
 	{
-		internal Hooks Hooks;
-	
+		private readonly Hooks _hooks;
+
 		public Plugin()
 		{
-			Hooks = new Hooks();
-			Hooks.Hook();
+			_hooks = new Hooks();
+			_hooks.Hook();
 		}
 
 		private void Awake()
 		{
-			
+
 		}
 
 		private void Update()
 		{
-			
+
 		}
 
 		private void OnDestroy()
 		{
-			Hooks.Unhook();
+			_hooks.Unhook();
 		}
 	}
 }
