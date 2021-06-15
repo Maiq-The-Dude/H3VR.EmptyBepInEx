@@ -1,12 +1,12 @@
 ﻿using BepInEx;
 
-namespace InfiniteCasings
+namespace H3VRMod
 {
-	[BepInPlugin("maiq.Plugin", "Plugin", "0.1.0")]
+	[BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
 	[BepInProcess("h3vr.exe")]
-	public class InfiniteCasings : BaseUnityPlugin
+	public class Plugin : BaseUnityPlugin
 	{
-		public InfiniteCasings()
+		public Plugin()
 		{
 			Hook();
 		}
