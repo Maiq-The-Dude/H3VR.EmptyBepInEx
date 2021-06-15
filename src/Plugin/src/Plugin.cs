@@ -1,4 +1,5 @@
-﻿using BepInEx;
+﻿using System;
+using BepInEx;
 
 namespace H3VRMod
 {
@@ -8,22 +9,22 @@ namespace H3VRMod
 	{
 		public Plugin()
 		{
-			Hook();
+			Hooks.Hook();
+		}
+
+		private void Awake()
+		{
+			
+		}
+
+		private void Update()
+		{
+			
 		}
 
 		private void OnDestroy()
 		{
-			Unhook();
-		}
-
-		private void Hook()
-		{
-
-		}
-
-		private void Unhook()
-		{
-
+			Hooks.Unhook();
 		}
 	}
 }
