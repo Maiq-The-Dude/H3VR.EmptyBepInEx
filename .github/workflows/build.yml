@@ -19,7 +19,7 @@ jobs:
       run: dotnet restore Plugin/
       
     - name: Build
-      run: dotnet build Plugin/ --configuration Release --no-restore
+      run: dotnet build src/ --configuration Release --no-restore
       
     - name: Package
       run: bash thunderstore/make_package.sh

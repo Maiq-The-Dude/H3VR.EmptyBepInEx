@@ -13,7 +13,7 @@ mkdir -p TEMP/Plugin/plugins
 cp manifest.json TEMP/manifest.json
 cp icon.png TEMP/icon.png
 cp ../README.md TEMP/README.md
-cp ../Plugin/Plugin/bin/Release/net35/Plugin.dll TEMP/Plugin/plugins/Plugin.dll
+cp ../src/Plugin/bin/Release/net35/Plugin.dll TEMP/Plugin/plugins/Plugin.dll
 
 # Modify the version number
 sed -i "s/{VERSION}/$VERSION/g" TEMP/manifest.json
