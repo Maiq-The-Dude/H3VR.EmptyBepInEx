@@ -7,8 +7,11 @@ namespace H3VRMod
 	[BepInProcess("h3vr.exe")]
 	public class Plugin : BaseUnityPlugin
 	{
+		internal Hooks Hooks;
+	
 		public Plugin()
 		{
+			Hooks = new Hooks();
 			Hooks.Hook();
 		}
 
