@@ -1,29 +1,33 @@
-﻿using BepInEx;
+﻿using System;
+using BepInEx;
 
 namespace H3VRMod
 {
-	[BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
+	[BepInPlugin(PluginInfo.GUID, PluginInfo.NAME, PluginInfo.VERSION)]
 	[BepInProcess("h3vr.exe")]
 	public class Plugin : BaseUnityPlugin
 	{
+		internal Hooks Hooks;
+	
 		public Plugin()
 		{
-			Hook();
+			Hooks = new Hooks();
+			Hooks.Hook();
+		}
+
+		private void Awake()
+		{
+			
+		}
+
+		private void Update()
+		{
+			
 		}
 
 		private void OnDestroy()
 		{
-			Unhook();
-		}
-
-		private void Hook()
-		{
-
-		}
-
-		private void Unhook()
-		{
-
+			Hooks.Unhook();
 		}
 	}
 }
