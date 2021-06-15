@@ -1,0 +1,9 @@
+{
+    "name": "InfiniteCasings",
+    "version_number": "1.1.0",
+    "dependencies": [
+        "nrgill28-HookGenPatcher_H3VR-1.2.3"
+    ],
+    "description": "Enables infinite casings on scenes that normally force casing despawn, such as TNH.",
+    "website_url": "https://github.com/Maiq-The-Dude/InfiniteCasings"
+}
